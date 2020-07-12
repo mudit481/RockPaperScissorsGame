@@ -60,10 +60,10 @@ def playGame(selection):
         conclusion = 'Computer Chose Scissors\nDraw'
 
     if yourLives==0:
-        conclusion = 'Better Luck Next Time\nYou Lost'
+        conclusion += '\nBetter Luck Next Time\nYou Lost'
         gameCloser()
     elif comLives==0:
-        conclusion = 'Congratulations!!\nYou Won'
+        conclusion += '\nCongratulations!!\nYou Won'
         gameCloser()
     
     label2.config(text = 'Your Lives = ' + str(yourLives))
